@@ -1,5 +1,13 @@
 body{
 	background-color:#232323;
+	margin:0px;
+	font-family:"Lato",sans-serif;
+}
+
+.container{
+	max-width:600px;
+	margin:0 auto;
+
 }
 
 .square{
@@ -8,13 +16,62 @@ body{
 	padding-bottom:30%;
 	float:left;
 	margin:1.66%;
+	border-radius:15%;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition:background 0.6s;
 }
-
-#container{
-	max-width:600px;
-	margin:0 auto;
-}
-
+ 
 h1{
+	margin:0px;
+	text-align: center;
+	line-height: 1.1;
 	color:white;
+	font-size:2.5rem;
+	background:#4286f4;
+	text-transform:uppercase;
+	padding:20px 0;
+}
+
+#colorDisplay{
+	font-size: 4.5rem;
+	display:block;
+}
+
+#message {
+	color:#232323;
+	display:inline-block;
+	width:20%;
+}
+
+.stripe {
+	background:white;
+	height:30px;
+	text-align:center;
+	color:#4286f4;
+}
+
+button, button:focus {
+	background:none;
+	border:none;
+	text-transform:uppercase;
+	height:100%;
+	outline:none;
+	font-weight:700;
+	color:#4286f4;
+	letter-spacing: 1px;
+	font-size:inherit;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}
+
+.active, button.active{
+	background:#4286f4;
+	color:white;
+}
+
+button:hover {
+	color:white;
+	background:#4286f4;
 }
